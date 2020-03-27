@@ -1,6 +1,7 @@
 """
 absolutni.py
 
+
 vypočte absolutní hodnotu čísla bez použití knihovny math
 """
 
