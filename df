@@ -6,12 +6,16 @@ Date:   Fri Mar 27 19:47:24 2020 +0100
 
 [1mdiff --git a/absolutni.py b/absolutni.py[m
 [1mindex e2324ad..2356b0c 100644[m
-[1m--- a/absolutni.py[m
-[1m+++ b/absolutni.py[m
+
+
+nové řádky
+
+
+jojo, to je poslendí nová řádka
 [36m@@ -12,3 +12,4 @@[m [melse:[m
      cislo = cislo_zadane[m
  [m
  print(f"Absolutní hodnota čísla {cislo_zadane} je {cislo}" )[m
-[32m+[m[32mprint()[m
+
 \ No newline at end of file[m
 tohleto je další změna souboru
