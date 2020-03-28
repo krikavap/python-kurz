@@ -14,3 +14,4 @@ Date:   Fri Mar 27 19:47:24 2020 +0100
  print(f"Absolutní hodnota čísla {cislo_zadane} je {cislo}" )[m
 [32m+[m[32mprint()[m
 \ No newline at end of file[m
+tohleto je další změna souboru
