@@ -2,6 +2,8 @@
 absolutni.py
 
 vypočte absolutní hodnotu čísla bez použití knihovny math
+
+
 """
 
 cislo_zadane = float(input("Zadej libovolné číslo: "))
