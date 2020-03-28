@@ -8,6 +8,8 @@ večírek.
 Připrav si dva identické seznamy osob
 ve firmě. Využívej příkaz pro smazání
 položky ze seznamu.
+
+
 """
 
 import random
