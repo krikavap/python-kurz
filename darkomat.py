@@ -1,13 +1,11 @@
 """
 darkomat.py
-Blíží se Vánoce a každý ve firmě
-přichystá pozornost pro jednoho kolegu.
+
+Blíží se Vánoce a každý ve firmě přichystá pozornost pro jednoho kolegu.
 Nesmí se stát, že by dával dárek sám sobě.
-Vypisuj, kdo komu připraví dárek na vánoční
-večírek.
-Připrav si dva identické seznamy osob
-ve firmě. Využívej příkaz pro smazání
-položky ze seznamu.
+Vypisuj, kdo komu připraví dárek na vánoční večírek.
+Připrav si dva identické seznamy osob ve firmě. Využívej příkaz pro smazání položky ze seznamu.
+
 """
 
 import random
