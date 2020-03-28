@@ -10,8 +10,11 @@ Date:   Fri Mar 27 19:47:24 2020 +0100
 
 nové řádky
 
+<<<<<<< HEAD
 doplnění jména
 jojo, to je poslední nová řádka
+=======
+
 [36m@@ -12,3 +12,4 @@[m [melse:[m
      cislo = cislo_zadane[m
  [m

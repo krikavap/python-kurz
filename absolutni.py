@@ -12,3 +12,4 @@ else:
     cislo = cislo_zadane
 
 print(f"Absolutní hodnota čísla {cislo_zadane} je {cislo}" )
+print()
