@@ -1,0 +1,21 @@
+[33mcommit b0f4382deadf715da57f96d325f936bf859851c6[m[33m ([m[1;36mHEAD -> [m[1;32mnovy_pokus[m[33m, [m[1;32mpokusne[m[33m)[m
+Author: krikavap <39693113+krikavap@users.noreply.github.com>
+Date:   Fri Mar 27 19:47:24 2020 +0100
+
+    fff
+
+[1mdiff --git a/absolutni.py b/absolutni.py[m
+[1mindex e2324ad..2356b0c 100644[m
+
+
+nové řádky
+
+doplnění jména
+jojo, to je poslední nová řádka
+[36m@@ -12,3 +12,4 @@[m [melse:[m
+     cislo = cislo_zadane[m
+ [m
+ print(f"Absolutní hodnota čísla {cislo_zadane} je {cislo}" )[m
+
+\ No newline at end of file[m
+tohleto je další změna souboru
