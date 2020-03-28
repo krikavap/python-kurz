@@ -6,6 +6,8 @@ program částku na vstupu rozdělí na mince nominálních hodnot 50, 20, 10, 5
 vstup: částka, která se má dělit
 výstup: počet mincí jednotlivých nominálních hodnot
 
+nově doplněno i ošetření chybových stavů při zadání částky a přesunutí výpočtu do funkce
+
 postup:
 1. zadání částky do proměnné castka
 2. výpočet:
@@ -17,28 +19,48 @@ postup:
     b. zbytek vydělím 1, výsledek uložím do proměnné jedna
 3. výpis výsledků
 """
+
+def vypocet(penez):
+    
+    # 2. výpočet
+    padesat=penez//50
+    penez=penez%50
+
+    dvacet=penez//20
+    penez=penez%20
+
+    deset=penez//10
+    penez=penez%10
+
+    pet=penez//5
+    penez=penez%5
+
+    dva=penez//2
+    penez=penez%2
+
+    jedna=penez//1
+    penez=castka%1
+
+    return padesat, dvacet, deset, pet, dva, jedna
+
+
 # 1. zadání částky do proměnné castka
-castka=int(input("zadej částku:"))
-castka_puvodni=castka
 
-# 2. výpočet
-padesat=castka//50
-castka=castka%50
+castka = 0
+    
+castka=input("Zadej částku (celé kladné číslo):")
+try:
+    castka = int(castka)
+    if castka > 0: 
+        x = vypocet(castka)
+        # 3. výpis výsledků
+        print("výsledek:", "\n", "50:",x[0],"\n", "20:", x[1],"\n", "10:", x[2], "\n", "5:", x[3], "\n", "2:", x[4],"\n", "1:", x[5],"\n")
+    else:
+        print("zadané číslo musí být > 0")
 
-dvacet=castka//20
-castka=castka%20
-
-deset=castka//10
-castka=castka%10
-
-pet=castka//5
-castka=castka%5
-
-dva=castka//2
-castka=castka%2
-
-jedna=castka//1
-castka=castka%1
-
-# 3. výpis výsledků
-print("výsledek:", "\n", "50:",padesat,"\n", "20:", dvacet,"\n", "10:", deset, "\n", "5:", pet, "\n", "2:", dva,"\n", "1:", jedna,"\n")
+except TypeError:
+    print("TypeError: Celé číslo musíš zadat! ")
+except ValueError:
+    print("Celé číslo musíš zadat! ")
+finally:
+    print()
