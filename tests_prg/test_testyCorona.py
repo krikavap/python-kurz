@@ -8,11 +8,27 @@ import sys
 sys.path.append(path.join(path.dirname(__file__), '..'))
 
 from testyCorona import TestyCorona_json
-import pytest
+#import pytest
 
-def test_prvniData():
+db = None   # iniciace proměnné
+
+def setup_module(module):
+    """
+    připojení db (iniciace). provede se jen na začátku celého testu
+    """
+    print("\n--------------setup----------------")
+    global db       # db je nadefinována jako globální
     db = TestyCorona_json()
     db.connect("testy.json")
+
+def teardown_module(module):
+    """
+    ukončení připojení a uvolnění prostředků
+    """
+    print("\n--------------close----------------")
+    db.close()
+
+def test_prvniData():
     prvniData = db.nacti_data("27.1.2020")
     assert prvniData["datum"] == "27.1.2020"
     assert prvniData["testy-den"] == 20
@@ -20,8 +36,6 @@ def test_prvniData():
 
 
 def test_druhyData():
-    db = TestyCorona_json()
-    db.connect("testy.json")
     prvniData = db.nacti_data("28.1.2020")
     assert prvniData["datum"] == "28.1.2020"
     assert prvniData["testy-den"] == 8
