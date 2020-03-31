@@ -1,3 +1,5 @@
 *.tmp
 *.pyc
 __pycache__/
+python-kurz-ws.code-workspace
+.vscode/settings.json
